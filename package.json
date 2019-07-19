@@ -1,6 +1,6 @@
 {
   "name": "nom-ts",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "umd:main": "dist/nom-ts.umd.production.js",
   "module": "dist/nom-ts.es.production.js",
@@ -11,7 +11,9 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test"
+    "test": "tsdx test",
+    "typedoc": "typedoc src/index.ts --excludePrivate --mode file --theme markdown --out docs --platform docusaurus",
+    "generate-readme": "type-literal -i src/index.ts -o generated.md"
   },
   "peerDependencies": {},
   "husky": {
