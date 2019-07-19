@@ -12,18 +12,9 @@
 {
 }
 
-/**
- * @hidden
- */
 declare const __brand: unique symbol;
-/**
- * @hidden
- */
 declare const __type: unique symbol;
 
-/**
- * @hidden
- */
 interface __Brand<T, S extends string> {
   [__brand]: S;
   [__type]: T;
