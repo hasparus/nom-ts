@@ -1,0 +1,6 @@
+{
+  "extends": ["@hasparus/tslint-config", "dtslint/dtslint.json"],
+  "rules": {
+    "comment-format": false
+  }
+}

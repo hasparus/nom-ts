@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Brand) internal type isn't assignable to branded type (type) should match snapshot: (Brand) internal type isn't assignable to branded type 1`] = `
+"Type '1000' is not assignable to type 'Brand<number, \\"PlayerId\\">'.
+  Type '1000' is not assignable to type '__Brand<number, \\"PlayerId\\">'."
+`;
+
+exports[`(Brand) we can't index with branded type (type) should match snapshot: (Brand) we can't index with branded type 1`] = `"Element implicitly has an 'any' type because expression of type 'Brand<number, \\"PlayerId\\">' can't be used to index type 'Record<Brand<number, \\"PlayerId\\">, number>'."`;
+
+exports[`(Flavor) one flavored type is not assignable to the other (type) should match snapshot: (Flavor) one flavored type is not assignable to the other 1`] = `
+"Type 'Flavor<number, \\"1\\">' is not assignable to type 'Flavor<number, \\"2\\">'.
+  Type 'Flavor<number, \\"1\\">' is not assignable to type '{ [__brand]?: \\"2\\" | undefined; [__type]?: number | undefined; }'.
+    Types of property '[__brand]' are incompatible.
+      Type '\\"1\\" | undefined' is not assignable to type '\\"2\\" | undefined'.
+        Type '\\"1\\"' is not assignable to type '\\"2\\" | undefined'."
+`;
