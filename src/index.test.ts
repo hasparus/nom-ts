@@ -1,5 +1,11 @@
+import { Unbrand, Brand } from './index';
+
 describe('nom', () => {
-  it('should pass', () => {
-    expect(2).toBe(2);
+  type Branded = Brand<object, '👽'>;
+
+  it('Unbrand is identity at runtime', () => {
+    const x = { x: 'x' } as Branded;
+
+    expect(Unbrand(x)).toBe(x);
   });
 });
