@@ -11,9 +11,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test",
-    "typedoc": "typedoc src/index.ts --excludePrivate --mode file --theme markdown --out docs --platform docusaurus",
-    "generate-readme": "type-literal -i src/index.ts -o generated.md"
+    "test": "tsdx test"
   },
   "peerDependencies": {},
   "husky": {
