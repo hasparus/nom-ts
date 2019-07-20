@@ -15,6 +15,7 @@
 declare const __brand: unique symbol;
 declare const __type: unique symbol;
 
+// not needed, but makes `Brand` tooltip prettier.
 interface __Brand<T, S extends string> {
   [__brand]: S;
   [__type]: T;

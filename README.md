@@ -50,14 +50,16 @@ const myScore = scores[myId];
   without any additional syntax
 
 ```ts
-export type Flavor<T, S extends string> = T & {
+interface __Flavor<T, S extends string> {
   [__brand]?: S;
   /**
    * Intersection is distributive over union, but we don't want to "lose" information about T.
    * `__type?: T` will be useful for Unbrand.
    */
   [__type]?: T;
-};
+}
+
+export type Flavor<T, S extends string> = T & __Flavor<T, S>;
 
 export type Unbrand<T> = T extends Flavor<infer X, any> ? X : T;
 
