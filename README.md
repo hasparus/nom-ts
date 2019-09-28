@@ -70,15 +70,16 @@ export type Dict<K extends PropertyKey, V> = Record<Unbrand<K>, V>;
 
 # Links
 
-- https://en.wikipedia.org/wiki/Refinement_type
-- https://basarat.gitbooks.io/typescript/docs/tips/nominalTyping.html
-- https://github.com/gcanti/newtype-ts
 - https://github.com/Microsoft/TypeScript/issues/202
+- https://basarat.gitbooks.io/typescript/docs/tips/nominalTyping.html
 - "Brand" name is taken from
   https://michalzalecki.com/nominal-typing-in-typescript/
 - "Flavor" name is taken from
   https://spin.atomicobject.com/2018/01/15/typescript-flexible-nominal-typing/
+- https://github.com/gcanti/newtype-ts
 
-# Based on TSDX
+----
+
+#### Credits
 
 This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
