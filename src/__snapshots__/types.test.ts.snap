@@ -9,7 +9,7 @@ exports[`(Brand) we can't index with branded type (type) should match snapshot: 
 
 exports[`(Flavor) one flavored type is not assignable to the other (type) should match snapshot: (Flavor) one flavored type is not assignable to the other 1`] = `
 "Type 'Flavor<number, \\"1\\">' is not assignable to type 'Flavor<number, \\"2\\">'.
-  Type 'Flavor<number, \\"1\\">' is not assignable to type '{ [__brand]?: \\"2\\" | undefined; [__type]?: number | undefined; }'.
+  Type 'Flavor<number, \\"1\\">' is not assignable to type '__Flavor<number, \\"2\\">'.
     Types of property '[__brand]' are incompatible.
       Type '\\"1\\" | undefined' is not assignable to type '\\"2\\" | undefined'.
         Type '\\"1\\"' is not assignable to type '\\"2\\" | undefined'."
