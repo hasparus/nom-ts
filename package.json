@@ -1,6 +1,6 @@
 {
   "name": "nom-ts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "umd:main": "dist/nom-ts.umd.production.js",
   "module": "dist/nom-ts.es.production.js",
@@ -20,7 +20,8 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test"
+    "test": "tsdx test",
+    "prepublish": "npm run build"
   },
   "peerDependencies": {},
   "husky": {
