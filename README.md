@@ -49,7 +49,7 @@ const myScore = scores[myId];
 - 🦥 all branded types in nom-ts are assignable to their underlying type
   without any additional syntax
 
-# Code
+# The rest of the code
 
 ```ts
 interface __Flavor<T, S extends string> {
