@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "main": "dist/index.js",
   "umd:main": "dist/nom-ts.umd.production.js",
-  "module": "dist/nom-ts.es.production.js",
+  "module": "dist/nom-ts.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
