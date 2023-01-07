@@ -1,6 +1,6 @@
 {
   "name": "nom-ts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "umd:main": "dist/nom-ts.umd.production.js",
   "module": "dist/nom-ts.esm.js",
